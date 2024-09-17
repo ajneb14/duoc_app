@@ -3,7 +3,7 @@
 <ion-content class="ion-padding">
   <div class="menu-container">
     <h2>Alumnos</h2>
-    <ion-button expand="block" class="btn-scan-qr" (click)="navigateTo('scan-qr')">Escanear QR</ion-button>
+    <ion-button expand="block" class="btn-scan-qr" [routerLink]="['/alumnoqr']">Escanear QR</ion-button>
     <ion-button expand="block" class="btn-history" (click)="navigateTo('history')">Historial de asistencia</ion-button>
     <ion-button expand="block" class="btn-logout" (click)="logout()">Cerrar sesión</ion-button>
   </div>
