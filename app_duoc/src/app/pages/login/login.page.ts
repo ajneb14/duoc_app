@@ -9,7 +9,7 @@ import { NavController, ToastController } from '@ionic/angular';
 export class LoginPage {
   email: string = '';
   password: string = '';
-  userType: 'profesor' | 'alumno' = 'profesor'; // Valor por defecto
+  userType: 'profesor' | 'alumno' = 'profesor'; 
 
   constructor(private navCtrl: NavController, private toastController: ToastController) {}
 
@@ -24,11 +24,11 @@ export class LoginPage {
     if (this.email === credentials.email && this.password === credentials.password) {
       console.log('Inicio de sesión exitoso');
       
-      // Navegar a la página correspondiente según el tipo de usuario
+     
       if (this.userType === 'profesor') {
-        this.navCtrl.navigateRoot('/home');  // Navegar a la página principal para profesores
+        this.navCtrl.navigateRoot('/home');
       } else if (this.userType === 'alumno') {
-        this.navCtrl.navigateRoot('/home-alumno');  // Navegar a la página principal para alumnos
+        this.navCtrl.navigateRoot('/home-alumno'); 
       }
 
     } else {

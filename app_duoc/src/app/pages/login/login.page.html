@@ -13,7 +13,6 @@
     <ion-card-content>
       <form (ngSubmit)="onSubmit()">
         <ion-item>
-          <ion-label>Tipo de Usuario</ion-label>
           <ion-segment [(ngModel)]="userType" name="userType">
             <ion-segment-button value="profesor">Profesor</ion-segment-button>
             <ion-segment-button value="alumno">Alumno</ion-segment-button>
@@ -36,7 +35,7 @@
 
     <ion-footer>
       <ion-text color="medium">
-        ¿Olvidaste tu contraseña? <a href="/reset-password">Restablecer</a>
+        ¿Olvidaste tu contraseña? <a [routerLink]="['/change-password']">Restablecer</a>
       </ion-text>
     </ion-footer>
   </ion-card>

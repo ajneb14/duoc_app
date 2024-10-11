@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-       DuocUc
+      DuocUc
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,8 +9,8 @@
 <ion-content>
   <div class="menu-container">
     <h2>Docentes</h2>
-    <ion-button expand="block" class="btn-generate-qr" (click)="navigateTo('generate-qr')">Generar QR</ion-button>
-    <ion-button expand="block" class="btn-view-attendance" (click)="navigateTo('attendance')">Ver asistencia</ion-button>
+    <ion-button expand="block" class="btn-generate-qr" [routerLink]="['/docenteqr']">Generar QR</ion-button>
+    <ion-button expand="block" class="btn-view-attendance" (click)="navigateTo('/asistencia')">Ver asistencia</ion-button>
     <ion-button expand="block" class="btn-logout" (click)="logout()">Cerrar sesión</ion-button>
   </div>
 </ion-content>

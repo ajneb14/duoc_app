@@ -15,9 +15,9 @@ export class HomeAlumnoPage {
   }
 
   async logout() {
-    // Aquí puedes agregar la lógica para cerrar sesión
+   
     console.log('Cerrar sesión');
-    // Redirigir a la página de inicio de sesión o principal
+
     this.navCtrl.navigateRoot('/login');
   }
 }

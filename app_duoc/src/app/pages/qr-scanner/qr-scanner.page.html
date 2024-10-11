@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Escanear Código QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="qr-scanner-container">
+   
+    <div class="qr-scan-box">
+      <ion-icon name="qr-code-outline" class="qr-icon"></ion-icon>
+    </div>
+    <p>Por favor, escanee el código QR dentro del cuadro</p>
+    <ion-button expand="block" class="btn-scan" (click)="startScan()">Iniciar Escaneo</ion-button>
+    <ion-button expand="block" class="btn-volver" (click)="navigateToHomeAlumno()">Volver</ion-button>
+  </div>
+</ion-content>
